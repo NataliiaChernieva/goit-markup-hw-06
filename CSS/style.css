@@ -136,7 +136,7 @@ body {
 }
 
 .navigation .link.current::after {
-  content: "";
+  content: '';
   /*position: absolute;*/
   display: block;
   width: 100%;
@@ -185,7 +185,7 @@ li.connect-item:not(:last-child) {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url("../images/img.jpg");
+    url('../images/img.jpg');
   background-repeat: no-repeat;
 }
 
@@ -512,6 +512,22 @@ li.connect-item:not(:last-child) {
   fill: var(--other-color-text);
 }
 
+.form-input {
+  min-width: 358px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background-color: var(--secondary-bg-color);
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .footer-button {
   display: inline-flex;
 
@@ -523,6 +539,7 @@ li.connect-item:not(:last-child) {
   margin-left: 12px;
 
   box-sizing: border-box;
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
@@ -530,6 +547,7 @@ li.connect-item:not(:last-child) {
   text-align: center;
   letter-spacing: 0.06em;
   color: var(--other-color-text);
+  cursor: pointer;
 }
 
 .footer-form-icon {
@@ -661,7 +679,7 @@ li.connect-item:not(:last-child) {
   left: 50%;
   transform: translate(-50%, -50%);
 
-  min-width: 528px;
+  width: 528px;
   min-height: 581px;
   padding: 40px;
   background-color: var(--primary-bg-color);
@@ -693,6 +711,10 @@ li.connect-item:not(:last-child) {
   padding: 9px;
 }
 
+.form {
+  border: 1px solid tomato;
+}
+
 .form-title {
   font-weight: 700;
   font-size: 20px;
@@ -700,6 +722,54 @@ li.connect-item:not(:last-child) {
   text-align: center;
   letter-spacing: 0.03em;
   margin-bottom: 12px;
+}
+
+.form-field {
+  display: flex;
+  flex-direction: column;
+
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: var(--secondary-text-color);
+  margin-bottom: 10px;
+}
+
+.modal-form-icon {
+  position: absolute;
+  top: 14;
+  left: 14;
+}
+
+.form-field-input {
+  padding: 14px;
+  margin: 0;
+
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+
+.form-field textarea {
+  padding: 12px;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.form-field label {
+  margin-bottom: 4px;
+}
+
+.policy-label {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: var(--secondary-text-color);
+  margin-bottom: 30px;
 }
 
 /*========= END Модальное окно====*/
