@@ -442,10 +442,9 @@
                 <div class="join">
                     <h2 class="footer-title">Подпишитесь на рассылку</h2>
                     <form>
-                        <div class="form-input">
-                            <input type="email" name="mail" id="mail" placeholder="Введите текст" />
-                        </div>
                         
+                        <input class="form-input" type="email" name="mail" id="mail" placeholder="E-mail" />
+                                        
                         <button type="submit" class="footer-button">
                             Подписаться
                             <svg class="footer-form-icon" width="24" height="24">
@@ -502,11 +501,11 @@
 
                 <div class="form-field">
                     <label for="comment">Коментарий</label>
-                    <textarea name="comment" id="comment" rows="7" placeholder="Введите текст"></textarea>
+                    <textarea name="comment" id="comment" placeholder="Введите текст"></textarea>
                 </div>
 
-                <input type="checkbox" name="" id="policy"/>
-                <label class="policy-label" for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
+                <input class="form-policy visually-hidden" type="checkbox" name="policy" value="accept-policy" id="policy"/>
+                <label class="form-policy-label" for="policy">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a></label>
                 <!--<svg>
                     <use href="./images/sprite-new.svg#icon-Vector"></use>
                 </svg>-->
