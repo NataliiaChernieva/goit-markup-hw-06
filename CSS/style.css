@@ -692,10 +692,15 @@ input {
 }
 
 .modal-icon {
-  width: 11px;
-  height: 11px;
+  cursor: pointer;
+
+  transition: fill 250ms var(--timing-function);
 }
 
+.modal-icon:focus,
+.modal-icon:hover {
+  fill: var(--accent-color);
+}
 .close-btn {
   position: absolute;
   top: 8px;
@@ -711,7 +716,7 @@ input {
   border-radius: 50%;
   box-sizing: border-box;
   cursor: pointer;
-  padding: 9px;
+  padding: 6px;
 }
 
 .form-title {
@@ -749,19 +754,23 @@ input {
 
 .modal-form-icon {
   position: absolute;
-  bottom: 14px;
-  left: 14px;
+  bottom: 11px;
+  left: 12px;
+  background-size: cover;
 
   transition: fill 250ms var(--timing-function);
 }
 
 .form-field-input:focus,
-.form-field textarea:focus {
+.form-field textarea:focus,
+.form-field-input:hover,
+.form-field textarea:hover {
   outline: none;
   border-color: var(--accent-color);
 }
 
-.form-field-input:focus + .modal-form-icon {
+.form-field-input:focus + .modal-form-icon,
+.form-field-input:hover + .modal-form-icon {
   fill: var(--accent-color);
 }
 
@@ -802,13 +811,14 @@ input {
   margin-right: 9px;
   margin-left: 10px;
 
-  transition: border-color 250ms var(--timing-function);
+  transition: border 250ms var(--timing-function);
 }
 
 .form-policy:checked + .form-policy-label::before {
-  background-image: url('./images/sprite-new.svg#icon-icon-check');
-  border-color: var(--accent-color);
+  background-image: url('../images/icon-check.svg');
+  border: none;
 }
+
 /*========= END Модальное окно====*/
 
 .connect:hover,
